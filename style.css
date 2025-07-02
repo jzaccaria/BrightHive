@@ -5,6 +5,7 @@ body {
   background: #fff;
   color: #111;
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 /* Navigation */
@@ -102,31 +103,48 @@ section {
   padding: 4rem 2rem;
   max-width: 1100px;
   margin: auto;
+  border-top: 1px solid #ddd;
 }
+section:first-of-type {
+  border-top: none;
+}
+
 h1, h2, h3 {
   margin: 0.5em 0;
-  font-weight: 600;
 }
+
+h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .about .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+  text-align: center;
 }
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 .portfolio-grid img {
   width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
+
 .portfolio-grid img:hover {
   transform: scale(1.03);
 }
+
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -134,6 +152,7 @@ h1, h2, h3 {
   text-align: center;
   margin-top: 2rem;
 }
+
 .team-grid img {
   width: 100%;
   max-width: 200px;
@@ -146,6 +165,7 @@ footer.contact {
   text-align: center;
   background: #f9f9f9;
   padding: 4rem 2rem;
+  border-top: 1px solid #ddd;
 }
 footer a {
   color: #111;
