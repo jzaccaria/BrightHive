@@ -120,6 +120,7 @@ h2 {
   letter-spacing: 0.5px;
 }
 
+/* Services Grid */
 .about .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -128,6 +129,22 @@ h2 {
   text-align: center;
 }
 
+/* Service Icons */
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.services div:hover .service-icon {
+  filter: grayscale(0%);
+}
+
+/* Portfolio */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -140,11 +157,11 @@ h2 {
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-
 .portfolio-grid img:hover {
   transform: scale(1.03);
 }
 
+/* Team */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
