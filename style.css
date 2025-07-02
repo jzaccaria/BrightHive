@@ -131,8 +131,8 @@ h2 {
 
 /* Service Icons */
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: auto; /* ✅ Let height scale naturally */
   margin-bottom: 0.5rem;
   display: block;
   margin-left: auto;
@@ -140,6 +140,7 @@ h2 {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
+
 .services div:hover .service-icon {
   filter: grayscale(0%);
 }
